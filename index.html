@@ -343,76 +343,77 @@
 </section>
 
   <!-- RESEARCH -->
+<!-- RESEARCH -->
 <section id="research">
   <div class="container">
 
     <h2 class="section-title">Research</h2>
 
+    <!-- RESEARCH OVERVIEW -->
     <p class="section-intro">
-      My doctoral research in biostatistics and statistical genetics examined
-      methodological challenges in genetic association studies conducted under
-      <strong>Extreme Phenotype Sampling (EPS)</strong>. The work developed across
-      three connected phases: evaluating how population structure affects EPS studies,
-      building a linear mixed-model and missing-data framework, and developing and
-      evaluating an EM-based procedure for genetic association when genotype
-      information is incomplete.
+      My research background is in <strong>biostatistics and statistical genetics</strong>,
+      with particular expertise in mixed-effects models, complex sampling designs,
+      missing data, statistical inference, and computational methods. My doctoral
+      research focused on <strong>Extreme Phenotype Sampling (EPS)</strong> and
+      population structure in genetic association studies, while addressing broader
+      statistical problems involving confounding, incomplete covariate information,
+      correlated observations, and valid inference under non-random sampling.
     </p>
 
-    <!-- PHASE 1 -->
+    <p class="section-intro">
+      I am interested in applying this methodological foundation across genetic,
+      clinical, epidemiological, population-health, health-services, and other
+      quantitative health research settings.
+    </p>
+
+
+    <!-- POPULATION STRUCTURE & EPS -->
     <div class="card" style="margin-bottom: 30px;">
 
-      <h3>Phase 1: Population Structure in Extreme Phenotype Samples</h3>
+      <h3>Population Structure in Extreme Phenotype Sampling</h3>
 
       <p>
-        The first phase of my research examined the impact of
-        <strong>population structure and population stratification</strong> in
-        genetic association studies using
-        <strong>Extreme Phenotype Sampling</strong>.
-        EPS selectively genotypes individuals from the extremes of a phenotype
-        distribution and can provide efficiency gains for detecting genetic effects.
-        However, the sampling design can make underlying population structure more
-        difficult to account for and can lead to inflated false-positive associations
-        when inappropriate correction methods are used.
+        A major part of my doctoral research investigated how
+        <strong>population structure and population stratification</strong> affect
+        genetic association studies conducted using
+        <strong>Extreme Phenotype Sampling</strong>. EPS selectively genotypes
+        individuals from the extremes of a phenotype distribution and can improve
+        efficiency for detecting genetic effects. However, the sampling design can
+        make underlying population structure particularly difficult to account for,
+        increasing the risk of false-positive genetic associations when correction
+        methods are not appropriate for the sampling framework.
       </p>
 
       <p>
-        I investigated whether existing mixed-model approaches could adequately
-        control population stratification under an EPS design. This involved extensive
-        simulation studies evaluating type I error and statistical power across common
-        and rare variant scenarios and comparing methods developed for binary and
-        continuous traits.
+        I evaluated whether existing mixed-model approaches could adequately control
+        population stratification under EPS. This involved extensive simulation
+        studies examining <strong>type I error and statistical power</strong> under
+        common- and rare-variant scenarios and comparing methods designed for binary
+        and continuous traits.
       </p>
 
       <p>
-        The methods evaluated included
-        <strong>GMMAT, LEAP, CARAT, and GEMMA</strong>. The results showed that
-        performance depended strongly on whether the modelling approach was suitable
-        for the sampling framework. Several approaches successfully controlled false
-        positives for common variants, while others were not appropriate for the EPS
-        setting. Rare-variant scenarios remained particularly challenging.
+        The methods evaluated included <strong>GMMAT, LEAP, CARAT, and GEMMA</strong>.
+        The work showed that performance depended on whether the underlying modelling
+        approach was suitable for the EPS design. Several methods provided appropriate
+        false-positive control for common variants, while other approaches were not
+        suitable for the sampling framework. Rare-variant scenarios remained
+        particularly challenging.
       </p>
 
-      <p>
-        I also applied these approaches to real-world data from the
-        <strong>PROtEUs prostate cancer case-control study in Québec</strong>,
-        a dataset with known population substructure. Individuals from the extremes
-        of the BMI distribution were used to examine whether the patterns observed
-        in simulation were also evident in real genetic data.
-      </p>
-
-      <h4 style="margin-top: 20px; margin-bottom: 10px;">Methods & Skills</h4>
+      <h4 style="margin-top: 20px; margin-bottom: 10px;">Methods & Tools</h4>
 
       <span class="tag">Genetic Epidemiology</span>
       <span class="tag">Statistical Genetics</span>
       <span class="tag">Extreme Phenotype Sampling</span>
       <span class="tag">Population Stratification</span>
       <span class="tag">Population Structure</span>
-      <span class="tag">Genome-Wide Association Studies</span>
+      <span class="tag">GWAS</span>
       <span class="tag">Linear Mixed Models</span>
       <span class="tag">Generalized Linear Mixed Models</span>
+      <span class="tag">Simulation Studies</span>
       <span class="tag">Type I Error</span>
       <span class="tag">Statistical Power</span>
-      <span class="tag">Simulation Studies</span>
       <span class="tag">Common & Rare Variants</span>
       <span class="tag">R</span>
       <span class="tag">PLINK</span>
@@ -421,53 +422,48 @@
     </div>
 
 
-    <!-- PHASE 2 -->
+    <!-- MIXED MODELS & MISSING DATA -->
     <div class="card" style="margin-bottom: 30px;">
 
-      <h3>Phase 2: Building the LMM and Missing-Data Framework</h3>
+      <h3>Mixed-Effects Models & Missing Genetic Covariates</h3>
 
       <p>
-        The second phase moved from evaluating existing methods to investigating
-        estimation directly within a
-        <strong>genetic linear mixed-model framework</strong>.
-        I first considered the complete-data setting and explored likelihood-based
-        estimation and the
-        <strong>Expectation-Maximization (EM) algorithm</strong>
-        as a methodological foundation for estimating fixed effects,
-        genetic effects, and variance components.
+        Building on this work, I investigated estimation directly within a
+        <strong>genetic linear mixed-model framework</strong>. I first considered
+        the complete-data setting, using likelihood-based estimation and the
+        <strong>Expectation-Maximization (EM) algorithm</strong> as a methodological
+        foundation for estimating model parameters and variance components.
       </p>
 
       <p>
-        This complete-data work provided the foundation for extending the model to
-        the incomplete-data setting created by Extreme Phenotype Sampling.
-        Under an EPS design, phenotype information can be retained for the full
-        sample while genotypes are collected only for participants selected from
-        the extremes of the phenotype distribution.
+        I then extended this framework to the incomplete-data setting created by
+        Extreme Phenotype Sampling. In an EPS design, phenotype information can be
+        retained for the full sample while genotypes are collected only for
+        individuals selected from the extremes of the phenotype distribution.
       </p>
 
       <p>
-        I therefore formulated EPS as a
-        <strong>missing-data problem</strong>: the genotypes of individuals who
-        were not selected for genotyping were treated as
+        I formulated this selective genotyping design as a
+        <strong>missing-data problem</strong>. Genotypes belonging to individuals
+        who were not selected for genotyping were treated as
         <strong>missing genetic covariates</strong>, while their observed phenotype
         information remained available for analysis.
       </p>
 
       <p>
-        This formulation allowed the sampling design, the underlying population
-        structure, and incomplete genotype information to be incorporated within a
-        common mixed-model framework and provided the basis for extending the
-        EM algorithm to estimate model parameters in the presence of unobserved
-        genetic covariates.
+        This provided a framework for incorporating incomplete genotype information,
+        population structure, and the mixed-model dependence structure within the
+        estimation process rather than discarding information from participants who
+        had not been genotyped.
       </p>
 
-      <h4 style="margin-top: 20px; margin-bottom: 10px;">Methods & Skills</h4>
+      <h4 style="margin-top: 20px; margin-bottom: 10px;">Methods & Tools</h4>
 
       <span class="tag">Linear Mixed Models</span>
       <span class="tag">Mixed-Effects Modelling</span>
-      <span class="tag">Likelihood-Based Estimation</span>
-      <span class="tag">Expectation-Maximization</span>
+      <span class="tag">Likelihood Estimation</span>
       <span class="tag">Variance Components</span>
+      <span class="tag">Expectation-Maximization</span>
       <span class="tag">Missing Data</span>
       <span class="tag">Missing Genetic Covariates</span>
       <span class="tag">Extreme Phenotype Sampling</span>
@@ -479,74 +475,240 @@
     </div>
 
 
-    <!-- PHASE 3 -->
+    <!-- EM & INFERENCE -->
     <div class="card" style="margin-bottom: 30px;">
 
-      <h3>Phase 3: EM-Based Estimation, Inference & Evaluation</h3>
+      <h3>EM-Based Estimation & Statistical Inference</h3>
 
       <p>
-        In the third phase, I developed an
-        <strong>EM-based procedure for fitting linear mixed models with missing
-        genetic covariates</strong>, motivated by the selective genotyping structure
-        of Extreme Phenotype Sampling.
+        I developed an <strong>EM-based procedure for fitting linear mixed models
+        with missing genetic covariates</strong>, motivated by the selective
+        genotyping structure of Extreme Phenotype Sampling.
       </p>
 
       <p>
         The procedure used a
         <strong>method of weights adapted to the linear mixed-model setting</strong>
-        to account for missing genotype information. I also derived two approaches
-        for testing genetic association: a
-        <strong>likelihood-ratio test using importance sampling</strong>
-        and a
+        to handle missing genotype information. I also developed two approaches for
+        testing genetic association: a
+        <strong>likelihood-ratio test using importance sampling</strong> and a
         <strong>Monte Carlo-based Wald test</strong>.
       </p>
 
       <p>
-        I evaluated the proposed approach through simulation studies examining
-        parameter estimation, type I error, and statistical power under different
-        missing-data scenarios. The results identified important limitations of the
-        procedure. The hypothesis tests were generally conservative in the simulated
-        settings, power was low, and some parameter estimates showed evidence of bias.
+        I evaluated the procedure through simulation studies examining parameter
+        estimation, type I error, and statistical power across different missing-data
+        scenarios. The evaluation also identified important limitations. The tests
+        were generally conservative in the simulated settings, statistical power was
+        low, and some parameter estimates showed evidence of bias.
       </p>
 
       <p>
-        I then applied the method to the
-        <strong>PROtEUs prostate cancer dataset</strong>. The EM procedure was able
-        to estimate most model parameters, although the estimated genetic effect was
-        larger than estimates obtained using comparison approaches. Examination of
-        p-values across thousands of genetic markers also suggested remaining
-        false-positive inflation.
+        These findings highlighted the computational and inferential challenges of
+        combining population structure, selective genotyping, missing genetic
+        covariates, and mixed-model estimation within a single statistical framework.
+        They also identified areas where further methodological development is needed.
       </p>
 
-      <p>
-        These findings demonstrated both the potential and the difficulty of
-        incorporating population structure, selective genotyping, and missing
-        genetic covariates within a unified mixed-model framework. They also
-        identified methodological questions that require further investigation
-        before the EM-based procedure can be considered a reliable approach for
-        EPS studies.
-      </p>
-
-      <h4 style="margin-top: 20px; margin-bottom: 10px;">Methods & Skills</h4>
+      <h4 style="margin-top: 20px; margin-bottom: 10px;">Methods & Tools</h4>
 
       <span class="tag">EM Algorithm</span>
       <span class="tag">Linear Mixed Models</span>
       <span class="tag">Method of Weights</span>
       <span class="tag">Importance Sampling</span>
       <span class="tag">Monte Carlo Methods</span>
-      <span class="tag">Wald Test</span>
       <span class="tag">Likelihood-Ratio Test</span>
+      <span class="tag">Wald Test</span>
       <span class="tag">Parameter Estimation</span>
       <span class="tag">Variance Estimation</span>
-      <span class="tag">Type I Error</span>
-      <span class="tag">Statistical Power</span>
+      <span class="tag">Statistical Inference</span>
       <span class="tag">Simulation Studies</span>
       <span class="tag">R</span>
-      <span class="tag">PLINK</span>
       <span class="tag">High Performance Computing</span>
 
     </div>
 
+
+    <!-- REAL DATA APPLICATION -->
+    <div class="card" style="margin-bottom: 30px;">
+
+      <h3>Application to Genetic Epidemiology Data</h3>
+
+      <p>
+        An important part of this research involved moving beyond simulation to
+        evaluate statistical methods using real genetic epidemiology data. I worked
+        with data from the <strong>PROtEUs prostate cancer case-control study</strong>
+        conducted in Québec, Canada, a study population with known population
+        substructure.
+      </p>
+
+      <p>
+        For the Extreme Phenotype Sampling analyses, individuals from the extremes
+        of the <strong>BMI distribution</strong> were used to investigate how the
+        mixed-model approaches behaved in the presence of real population structure.
+        This provided an applied comparison with the patterns observed in the
+        simulation studies.
+      </p>
+
+      <p>
+        I also applied the EM-based procedure to the PROtEUs data. Although most
+        model parameters could be estimated, the estimated genetic effect was larger
+        than estimates from comparison approaches. Examination of p-values across
+        thousands of genetic markers also suggested remaining false-positive
+        inflation, reinforcing the need for further investigation of the procedure.
+      </p>
+
+      <h4 style="margin-top: 20px; margin-bottom: 10px;">Methods & Tools</h4>
+
+      <span class="tag">Genetic Epidemiology</span>
+      <span class="tag">Case-Control Studies</span>
+      <span class="tag">Real-World Genetic Data</span>
+      <span class="tag">Population Structure</span>
+      <span class="tag">Genetic Association Analysis</span>
+      <span class="tag">Extreme Phenotype Sampling</span>
+      <span class="tag">PLINK</span>
+      <span class="tag">R</span>
+      <span class="tag">Data Quality</span>
+      <span class="tag">Reproducible Analysis</span>
+
+    </div>
+
+
+    <!-- BROADER BIOSTATISTICS -->
+    <div class="card" style="margin-bottom: 30px;">
+
+      <h3>Broader Biostatistical Expertise</h3>
+
+      <p>
+        While statistical genetics provided the setting for much of my doctoral
+        methodological work, my expertise extends beyond genetic association studies.
+        I am interested in applying rigorous statistical methods to a broad range of
+        health and biomedical research questions.
+      </p>
+
+      <p>
+        My broader quantitative experience includes regression modelling,
+        mixed-effects models, generalized estimating equations, longitudinal and
+        correlated data, survival analysis, missing-data problems, simulation,
+        statistical inference, study design, statistical analysis planning, data
+        validation, and reproducible statistical programming.
+      </p>
+
+      <p>
+        I am particularly interested in research problems where careful consideration
+        of study design, data-generating mechanisms, confounding, dependence, or
+        missingness is important to obtaining reliable scientific conclusions.
+      </p>
+
+      <h4 style="margin-top: 20px; margin-bottom: 10px;">Biostatistical Methods</h4>
+
+      <span class="tag">Regression</span>
+      <span class="tag">Linear Mixed Models</span>
+      <span class="tag">Generalized Linear Mixed Models</span>
+      <span class="tag">GEE</span>
+      <span class="tag">Longitudinal Data</span>
+      <span class="tag">Correlated Data</span>
+      <span class="tag">Survival Analysis</span>
+      <span class="tag">Missing Data</span>
+      <span class="tag">Simulation</span>
+      <span class="tag">Statistical Inference</span>
+      <span class="tag">Study Design</span>
+      <span class="tag">Statistical Analysis Planning</span>
+      <span class="tag">R</span>
+      <span class="tag">SAS</span>
+
+    </div>
+
+
+    <!-- COLLABORATIVE RESEARCH -->
+    <div class="card" style="margin-bottom: 30px;">
+
+      <h3>Collaborative Research</h3>
+
+      <p>
+        I am strongly interested in contributing as a
+        <strong>collaborative biostatistician</strong> within multidisciplinary
+        research teams and established research programs. My methodological
+        background allows me to contribute not only at the analysis stage, but also
+        to the statistical reasoning that shapes a study from its early stages.
+      </p>
+
+      <p>
+        I can contribute across the research workflow, including study design,
+        data preparation and quality assessment, statistical analysis planning,
+        modelling, simulation and sensitivity analyses, interpretation of results,
+        data visualization, reproducible programming, and the statistical components
+        of manuscripts and research reports.
+      </p>
+
+      <p>
+        I am open to working within research laboratories, hospital research
+        institutes, clinical research programs, academic groups, and health-data
+        environments where quantitative expertise can strengthen ongoing scientific
+        work. I am equally interested in contributing to established projects and
+        collaborating on new methodological questions as they arise.
+      </p>
+
+      <h4 style="margin-top: 20px; margin-bottom: 10px;">
+        Areas of Collaborative Interest
+      </h4>
+
+      <span class="tag">Clinical Research</span>
+      <span class="tag">Epidemiology</span>
+      <span class="tag">Genetic Epidemiology</span>
+      <span class="tag">Population Health</span>
+      <span class="tag">Health Services Research</span>
+      <span class="tag">Outcomes Research</span>
+      <span class="tag">Administrative Health Data</span>
+      <span class="tag">Statistical Genetics</span>
+      <span class="tag">Genomics</span>
+      <span class="tag">Research Methods</span>
+      <span class="tag">Clinical Data</span>
+      <span class="tag">Health Data Analytics</span>
+
+    </div>
+
+
+    <!-- ONGOING RESEARCH -->
+    <div class="card">
+
+      <h3>Ongoing Research Interests</h3>
+
+      <p>
+        I continue to explore methodological questions arising from my doctoral work,
+        particularly the use of mixed models and missing-data approaches for genetic
+        association studies under complex sampling designs.
+      </p>
+
+      <p>
+        I am interested in improving estimation and inference when genotype
+        information is incomplete, understanding how complex sampling designs
+        interact with population structure, and investigating methods that better
+        control confounding while retaining the efficiency advantages of
+        Extreme Phenotype Sampling.
+      </p>
+
+      <p>
+        This remains an active area of research interest, with opportunities for
+        further methodological development, simulation-based evaluation, and
+        application to genetic and health datasets.
+      </p>
+
+      <h4 style="margin-top: 20px; margin-bottom: 10px;">Research Interests</h4>
+
+      <span class="tag">Statistical Genetics</span>
+      <span class="tag">Genetic Epidemiology</span>
+      <span class="tag">Mixed Models</span>
+      <span class="tag">Missing Data</span>
+      <span class="tag">Extreme Phenotype Sampling</span>
+      <span class="tag">Population Structure</span>
+      <span class="tag">Statistical Computing</span>
+      <span class="tag">Methodological Research</span>
+
+    </div>
+
+  </div>
+</section>
 
     <!-- ONGOING RESEARCH -->
     <div class="card">
