@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Maryam Yetunde Onifade, PhD | Biostatistics & Health Data Analytics</title>
+
+  <meta
+    name="description"
+    content="Professional portfolio of Maryam Yetunde Onifade, PhD, specializing in biostatistics, health data analytics, statistical programming, research methods, and data science."
+  >
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+      color: #222;
+      background: #ffffff;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      background: #ffffff;
+      border-bottom: 1px solid #e5e5e5;
+      z-index: 1000;
+    }
+
+    .nav-container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 16px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 24px;
+    }
+
+    .logo {
+      font-weight: 700;
+      font-size: 18px;
+      text-decoration: none;
+    }
+
+    .nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #444;
+      font-size: 14px;
+    }
+
+    .nav-links a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      max-width: 1100px;
+      margin: auto;
+      padding: 95px 24px 80px;
+    }
+
+    .hero-label {
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 18px;
+      color: #555;
+    }
+
+    .hero h1 {
+      font-size: clamp(42px, 7vw, 72px);
+      line-height: 1.05;
+      max-width: 850px;
+      margin-bottom: 22px;
+    }
+
+    .hero h2 {
+      font-size: clamp(20px, 3vw, 28px);
+      font-weight: 400;
+      color: #555;
+      margin-bottom: 28px;
+    }
+
+    .hero p {
+      max-width: 780px;
+      font-size: 18px;
+      color: #444;
+      margin-bottom: 32px;
+    }
+
+    .button-group {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 12px 20px;
+      border: 1px solid #222;
+      text-decoration: none;
+      font-weight: 600;
+      border-radius: 4px;
+    }
+
+    .button-primary {
+      background: #222;
+      color: #fff;
+    }
+
+    .button-secondary {
+      background: #fff;
+      color: #222;
+    }
+
+    section {
+      padding: 75px 24px;
+    }
+
+    .section-alt {
+      background: #f7f7f7;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .section-title {
+      font-size: 34px;
+      margin-bottom: 28px;
+    }
+
+    .section-intro {
+      max-width: 800px;
+      font-size: 17px;
+      color: #444;
+      margin-bottom: 35px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 22px;
+    }
+
+    .card {
+      background: #fff;
+      border: 1px solid #e0e0e0;
+      padding: 24px;
+      border-radius: 6px;
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      font-size: 20px;
+    }
+
+    .card p {
+      color: #555;
+      margin-bottom: 12px;
+    }
+
+    .tag {
+      display: inline-block;
+      margin: 4px 4px 4px 0;
+      padding: 5px 9px;
+      background: #eeeeee;
+      border-radius: 3px;
+      font-size: 13px;
+    }
+
+    .skills-group {
+      margin-bottom: 28px;
+    }
+
+    .skills-group h3 {
+      margin-bottom: 10px;
+    }
+
+    .publication {
+      padding: 18px 0;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .publication:last-child {
+      border-bottom: none;
+    }
+
+    .publication-title {
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    .contact-box {
+      max-width: 750px;
+      padding: 30px;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      background: #fff;
+    }
+
+    footer {
+      border-top: 1px solid #e5e5e5;
+      padding: 30px 24px;
+      text-align: center;
+      color: #666;
+      font-size: 14px;
+    }
+
+    @media (max-width: 750px) {
+      .nav-container {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .hero {
+        padding-top: 65px;
+      }
+
+      section {
+        padding-top: 55px;
+        padding-bottom: 55px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <div class="nav-container">
+      <a class="logo" href="#home">Maryam Onifade</a>
+
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#publications">Publications</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- HERO -->
+  <header class="hero" id="home">
+    <div class="hero-label">Biostatistics · Health Data · Statistical Programming</div>
+
+    <h1>Maryam Yetunde Onifade, PhD</h1>
+
+    <h2>
+      Biostatistician and Statistical Analyst
+    </h2>
+
+    <p>
+      I work at the intersection of biostatistics, health research, and data analytics.
+      My experience includes statistical modelling, genetic and clinical data analysis,
+      health data research, statistical programming, and the development of reproducible
+      analytical workflows using R, SAS, Python, SQL, and Power BI.
+    </p>
+
+    <div class="button-group">
+      <a class="button button-primary" href="#research">View My Work</a>
+      <a class="button button-secondary" href="#contact">Contact Me</a>
+    </div>
+  </header>
+
+
+  <!-- ABOUT -->
+  <section id="about" class="section-alt">
+    <div class="container">
+      <h2 class="section-title">About</h2>
+
+      <p class="section-intro">
+        I am a quantitative health researcher and statistical analyst with doctoral
+        training in biostatistics. My work has focused on developing and applying
+        statistical methods to complex health and genetic data, with additional
+        experience in clinical research, health analytics, data quality, business
+        intelligence, and research reporting.
+      </p>
+
+      <p class="section-intro">
+        My technical work spans traditional statistical methodology and modern
+        data tools. I am particularly interested in opportunities involving
+        biostatistics, epidemiology, clinical research, health services research,
+        administrative health data, statistical programming, and health data analytics.
+      </p>
+    </div>
+  </section>
+
+
+  <!-- RESEARCH -->
+  <section id="research">
+    <div class="container">
+      <h2 class="section-title">Research</h2>
+
+      <p class="section-intro">
+        My doctoral research focused on statistical methodology for genetic association
+        studies involving complex sampling designs and missing genetic data.
+      </p>
+
+      <div class="grid">
+
+        <div class="card">
+          <h3>Statistical Genetics</h3>
+          <p>
+            Developed statistical approaches for genetic association analysis under
+            trait-dependent and extreme phenotype sampling designs.
+          </p>
+          <span class="tag">Statistical Genetics</span>
+          <span class="tag">GWAS</span>
+          <span class="tag">Genetic Data</span>
+        </div>
+
+        <div class="card">
+          <h3>Mixed-Effects Modelling</h3>
+          <p>
+            Applied linear and generalized mixed-effects modelling approaches to account
+            for dependence structures and population stratification in genetic studies.
+          </p>
+          <span class="tag">LMM</span>
+          <span class="tag">GLMM</span>
+          <span class="tag">Longitudinal Methods</span>
+        </div>
+
+        <div class="card">
+          <h3>Missing Data & EM Algorithms</h3>
+          <p>
+            Developed EM-based approaches for inference when genotype information was
+            incomplete under missing-at-random mechanisms.
+          </p>
+          <span class="tag">EM Algorithm</span>
+          <span class="tag">Missing Data</span>
+          <span class="tag">Statistical Computing</span>
+        </div>
+
+        <div class="card">
+          <h3>Simulation Studies</h3>
+          <p>
+            Conducted simulation studies to evaluate bias, efficiency, coverage,
+            statistical power, and robustness of proposed methods.
+          </p>
+          <span class="tag">Monte Carlo</span>
+          <span class="tag">R</span>
+          <span class="tag">HPC</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section-alt">
+    <div class="container">
+      <h2 class="section-title">Selected Projects</h2>
+
+      <p class="section-intro">
+        A selection of projects demonstrating statistical analysis, machine learning,
+        data engineering, and business intelligence capabilities.
+      </p>
+
+      <div class="grid">
+
+        <div class="card">
+          <h3>Health Machine Learning</h3>
+          <p>
+            Built an end-to-end supervised machine learning workflow for diabetes
+            prediction, including data cleaning, exploratory analysis, feature selection,
+            model development, and evaluation.
+          </p>
+          <span class="tag">Python</span>
+          <span class="tag">Machine Learning</span>
+          <span class="tag">Health Data</span>
+        </div>
+
+        <div class="card">
+          <h3>Time-Series Forecasting</h3>
+          <p>
+            Developed and evaluated forecasting models using baseline and machine
+            learning approaches, with model performance assessed across multiple
+            forecast horizons.
+          </p>
+          <span class="tag">Python</span>
+          <span class="tag">XGBoost</span>
+          <span class="tag">Forecasting</span>
+        </div>
+
+        <div class="card">
+          <h3>Business Intelligence Analytics</h3>
+          <p>
+            Developed analytical dashboards using SQL, Power Query, DAX, dimensional
+            modelling, and Power BI to support reporting and decision-making.
+          </p>
+          <span class="tag">SQL</span>
+          <span class="tag">Power BI</span>
+          <span class="tag">DAX</span>
+        </div>
+
+        <div class="card">
+          <h3>Customer Segmentation</h3>
+          <p>
+            Compared K-Means and DBSCAN clustering approaches for customer segmentation,
+            using quantitative validation measures to assess cluster performance.
+          </p>
+          <span class="tag">Python</span>
+          <span class="tag">Clustering</span>
+          <span class="tag">Data Science</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="container">
+      <h2 class="section-title">Technical Skills</h2>
+
+      <div class="skills-group">
+        <h3>Statistical Methods</h3>
+        <p>
+          Biostatistics · Regression · Linear Mixed Models · Generalized Linear Models ·
+          GEE · Survival Analysis · Missing Data · Statistical Genetics ·
+          Monte Carlo Simulation · Longitudinal Data Analysis
+        </p>
+      </div>
+
+      <div class="skills-group">
+        <h3>Statistical Programming</h3>
+        <p>
+          R · SAS · Python
+        </p>
+      </div>
+
+      <div class="skills-group">
+        <h3>Data & Databases</h3>
+        <p>
+          SQL · Relational Databases · Data Cleaning · Data Validation ·
+          Data Integration · Reproducible Analytical Workflows
+        </p>
+      </div>
+
+      <div class="skills-group">
+        <h3>Business Intelligence & Visualization</h3>
+        <p>
+          Power BI · Power Query · DAX · Excel · Data Visualization ·
+          Dimensional Modelling
+        </p>
+      </div>
+
+      <div class="skills-group">
+        <h3>Research</h3>
+        <p>
+          Study Design · Statistical Analysis Plans · Clinical Research ·
+          Health Research · Research Documentation · Scientific Communication
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- PUBLICATIONS -->
+  <section id="publications" class="section-alt">
+    <div class="container">
+      <h2 class="section-title">Publications & Research Outputs</h2>
+
+      <div class="publication">
+        <div class="publication-title">
+          Statistical methodology for genetic association studies under trait-dependent sampling
+        </div>
+        <p>
+          Doctoral research in biostatistics and statistical genetics.
+        </p>
+      </div>
+
+      <div class="publication">
+        <div class="publication-title">
+          Peer-reviewed research in genetic association analysis
+        </div>
+        <p>
+          Published work examining statistical methods for complex genetic and health data.
+        </p>
+      </div>
+
+      <div class="publication">
+        <div class="publication-title">
+          Integrative gene-disease analysis for drug repositioning
+        </div>
+        <p>
+          Graduate research applying bioinformatics and statistical methods to infectious disease research.
+        </p>
+      </div>
+
+      <p style="margin-top: 25px;">
+        Detailed publication citations and links will be added here.
+      </p>
+    </div>
+  </section>
+
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container">
+      <h2 class="section-title">Contact</h2>
+
+      <div class="contact-box">
+        <p style="font-size: 18px; margin-bottom: 18px;">
+          I am interested in opportunities and collaborations involving
+          biostatistics, health data analytics, clinical research,
+          epidemiology, statistical programming, and quantitative health research.
+        </p>
+
+        <p>
+          <strong>Email:</strong>
+          <a href="mailto:YOUR-EMAIL-HERE">monifade@uottawa.ca</a>
+        </p>
+
+        <p>
+          <strong>GitHub:</strong>
+          <a href="https://github.com/monifade" target="_blank">
+            github.com/monifade
+          </a>
+        </p>
+
+        <p>
+          <strong>LinkedIn:</strong>
+          <a href="www.linkedin.com/in/maryamonifade" target="_blank">
+            LinkedIn Profile
+          </a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer>
+    © 2026 Maryam Yetunde Onifade. Built with GitHub Pages.
+  </footer>
+
+</body>
+</html>
